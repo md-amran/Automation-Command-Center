@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Command Center</title>
+    <!-- Favicon -->
+     <link rel="icon" type="image/png" href="brand_image.png">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <header>
+        <div class="logo">
+    <div class="logo-icon">
+        <img src="brand_image.png" alt="zulfiqar">
+    </div>
+    <span>N8N Command Center</span>
+</div>
+        <div class="controls">
+            <button class="theme-toggle" id="theme-btn" title="Toggle Theme">
+                <i data-lucide="sun" id="theme-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="chat-window">
+            <!-- Messages appear here -->
+        </div>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Type a command for n8n..." rows="1"></textarea>
+                <button class="send-btn" id="send-btn">
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>This website and the entire n8n automation system were created by <a href="https://github.com/amran" target="_blank">Md. Amran</a>.</p>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
